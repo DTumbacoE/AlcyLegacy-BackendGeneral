@@ -10,7 +10,7 @@ import repositoryRoutes from "./routes/repository.routes.js";
 import bobRoutes from "./routes/bob.routes.js";
 import githubRoutes from "./routes/github.routes.js";
 const app = express();
-
+app.set("trust proxy", 1);
 app.disable("x-powered-by");
 
 app.use(helmet());
